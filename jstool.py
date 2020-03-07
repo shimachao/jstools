@@ -2,7 +2,7 @@
 
 """
 Usage:
-    js_tool dename (--infile <infilename>) [--outfile <outfile>]
+    js_tool dename (--infile <infilename>) [--outfile <outfilename>]
 
 Options:
     -h,--help  输出帮助信息
@@ -26,7 +26,7 @@ def replace16(match) -> str:
 def cli():
     args = docopt(__doc__)
     if args['dename']:
-        handle_dename(args['<infilename>'], args['<outfile>'])
+        handle_dename(args['<infilename>'], args['<outfilename>'])
 
 
 def handle_dename(infile, outfile):
